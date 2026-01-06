@@ -1,9 +1,12 @@
+import { BrowserRouter } from "react-router-dom";
+
 import {
   About,
   Achievements,
   CompetitiveCoding,
   Contact,
   Hero,
+  Navbar,
   Responsibility,
   Tech,
   Works,
@@ -12,21 +15,24 @@ import {
 
 const App = () => {
   return (
-    <div className='relative z-0 bg-primary'>
-      <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-        <Hero />
+    <BrowserRouter>
+      <div className='relative z-0 bg-primary'>
+        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+          <Navbar />
+          <Hero />
+        </div>
+        <About />
+        <CompetitiveCoding />
+        <Tech />
+        <Works />
+        <Achievements />
+        <Responsibility />
+        <div className='relative z-0'>
+          <Contact />
+          <StarsCanvas />
+        </div>
       </div>
-      <About />
-      <CompetitiveCoding />
-      <Tech />
-      <Works />
-      <Achievements />
-      <Responsibility />
-      <div className='relative z-0'>
-        <Contact />
-        <StarsCanvas />
-      </div>
-    </div>
+    </BrowserRouter>
   );
 };
 

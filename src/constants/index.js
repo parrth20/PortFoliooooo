@@ -35,6 +35,33 @@ import {
   linkIcon,
 } from "../assets";
 
+export const navLinks = [
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "competitive",
+    title: "Competitive",
+  },
+  {
+    id: "project",
+    title: "Projects",
+  },
+  {
+    id: "achievements",
+    title: "Achievements",
+  },
+  {
+    id: "responsibility",
+    title: "Responsibility",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+];
+
 const services = [
   {
     title: "Full-Stack Development",
