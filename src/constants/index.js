@@ -180,7 +180,7 @@ const achievements = [
   "Global Rank 37 out of 21.3K participants in CodeChef Starters 179",
   "Global Rank 52 out of 19.7K participants in CodeChef Starters 172",
   "Global Rank 399 out of 21.8K participants in LeetCode Biweekly Contest 164", 
-  "100+ contests across platforms and 1500+ problems solved on various competitive sites."
+  "100+ contests attended and 1500+ problems solved across various competitive platforms."
 ];
 
 const responsibilities = [
@@ -189,7 +189,7 @@ const responsibilities = [
     org: "Eifer Sports Society, IIIT Lucknow",
     date: "Aug 2023 – Present",
     points: [
-      "Coordinated Infinoto Sports Fest logistics for 450+ participants; led a 16-member team.",
+      "Coordinated Infinito Sports Fest logistics for 450+ participants; led a 16-member team.",
       "Managed outreach, vendor negotiation, scheduling; captained inter-college table-tennis team (top-4).",
     ],
   },
