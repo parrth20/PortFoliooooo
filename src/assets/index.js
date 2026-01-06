@@ -7,6 +7,9 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import linkIcon from "./link.svg";
+import codeforces from "./codeforces.svg";
+import leetcode from "./leetcode.svg";
+import codechef from "./codechef.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -50,6 +53,9 @@ export {
   menu,
   close,
   linkIcon,
+  codeforces,
+  leetcode,
+  codechef,
   css,
   docker,
   kubernetes,

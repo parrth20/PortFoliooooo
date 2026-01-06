@@ -6,13 +6,18 @@ import { SectionWrapper } from "../hoc";
 import { competitiveProfiles } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const CompetitiveCodingCard = ({ index, platform, handle, solved, rating, link }) => (
+const CompetitiveCodingCard = ({ index, platform, handle, solved, rating, link, icon }) => (
   <motion.div
     variants={fadeIn("up", "spring", index * 0.5, 0.75)}
     className='bg-tertiary p-5 rounded-2xl sm:w-[300px] w-full'
   >
-    <h3 className='text-white text-[22px] font-bold'>{platform}</h3>
-    <p className='text-secondary text-[14px] mt-1'>@{handle}</p>
+    <div className='flex items-center gap-3'>
+      <img src={icon} alt={`${platform} icon`} className='w-10 h-10' />
+      <div>
+        <h3 className='text-white text-[20px] font-bold'>{platform}</h3>
+        <p className='text-secondary text-[13px]'>@{handle}</p>
+      </div>
+    </div>
     <ul className='mt-4 text-secondary text-[14px] space-y-2'>
       <li>{solved}</li>
       <li>Rating: {rating}</li>

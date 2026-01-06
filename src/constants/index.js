@@ -33,6 +33,9 @@ import {
   solverse,
   nyaysaarthi,
   linkIcon,
+  codeforces,
+  leetcode,
+  codechef,
 } from "../assets";
 
 export const navLinks = [
@@ -195,6 +198,7 @@ const competitiveProfiles = [
     solved: "900+ problems solved",
     rating: "1501 (Specialist)",
     link: "https://codeforces.com/profile/dnrlvparth",
+    icon: codeforces,
   },
   {
     platform: "LeetCode",
@@ -202,6 +206,7 @@ const competitiveProfiles = [
     solved: "250+ problems solved",
     rating: "1874 (Knight)",
     link: "https://leetcode.com/u/parrth20/",
+    icon: leetcode,
   },
   {
     platform: "CodeChef",
@@ -209,6 +214,7 @@ const competitiveProfiles = [
     solved: "300+ problems solved",
     rating: "1853 (4-star)",
     link: "https://www.codechef.com/users/parrth20",
+    icon: codechef,
   },
 ];
 
