@@ -43,7 +43,7 @@ const Navbar = () => {
           }}
         >
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Parth Bandwal &nbsp;
+          Parth Bandwal &nbsp;
             <span className='sm:block hidden'> | B.Tech IT @ IIIT Lucknow</span>
           </p>
         </Link>

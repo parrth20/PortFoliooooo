@@ -4,7 +4,7 @@ import { styles } from "../styles";
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { Model } from './Model';
+import { Model } from './Model'; /* highlight-line */
 
 const Hero = () => {
   return (
@@ -29,34 +29,29 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'flex-end',
-          alignItems: 'center',
-          marginLeft: '80px',
-          zIndex: '9999',
-        }}
-      >
-        <Canvas
-          camera={{ fov: 30 }}
-          style={{
+      <div style={{ display: 'flex', justifyContent: 'flex-end',
+      alignItems: 'center', marginLeft: '80px', zIndex: '9999' }}>
+      <Canvas
+         camera={{  fov: 30 }}
+         style={{
             backgroundColor: 'transparent',
             width: '400px',
             height: '600px',
             marginRight: '60px',
-            marginTop: '30px',
-          }}
-        >
-          <ambientLight intensity={1.25} />
-          <ambientLight intensity={0.1} />
-          <directionalLight intensity={0.4} />
-          <Suspense fallback={null}>
-            <Model position={[0.025, -0.9, 0]} />
-          </Suspense>
-          <OrbitControls />
-        </Canvas>
+            marginTop: '30px'
+         }}
+      >
+         <ambientLight intensity={1.25} />
+         <ambientLight intensity={0.1} />
+         <directionalLight intensity={0.4} />
+         <Suspense fallback={null}>
+            <Model position={[0.025, -0.9, 0]} /> 
+         </Suspense>
+         <OrbitControls />
+      </Canvas>
       </div>
+
+      {/* <ComputersCanvas /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
