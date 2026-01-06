@@ -1,17 +1,18 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import { Model } from "./Model";
+import { ComputersCanvas } from "./canvas";
+import React, { Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import { Model } from './Model'; /* highlight-line */
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen'>
+    <section className={`relative w-full h-screen`}>
       <div
-        style={{ zIndex: "1" }}
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        style={{ zIndex: '1' }}
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -29,34 +30,29 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "flex-end",
-          alignItems: "center",
-          marginLeft: "80px",
-          zIndex: "9999",
-        }}
+      <div style={{ display: 'flex', justifyContent: 'flex-end',
+      alignItems: 'center', marginLeft: '80px', zIndex: '9999' }}>
+      <Canvas
+         camera={{  fov: 30 }}
+         style={{
+            backgroundColor: 'transparent',
+            width: '400px',
+            height: '600px',
+            marginRight: '60px',
+            marginTop: '30px'
+         }}
       >
-        <Canvas
-          camera={{ fov: 30 }}
-          style={{
-            backgroundColor: "transparent",
-            width: "400px",
-            height: "600px",
-            marginRight: "60px",
-            marginTop: "30px",
-          }}
-        >
-          <ambientLight intensity={1.25} />
-          <ambientLight intensity={0.1} />
-          <directionalLight intensity={0.4} />
-          <Suspense fallback={null}>
-            <Model position={[0.025, -0.9, 0]} />
-          </Suspense>
-          <OrbitControls />
-        </Canvas>
+         <ambientLight intensity={1.25} />
+         <ambientLight intensity={0.1} />
+         <directionalLight intensity={0.4} />
+         <Suspense fallback={null}>
+            <Model position={[0.025, -0.9, 0]} /> 
+         </Suspense>
+         <OrbitControls />
+      </Canvas>
       </div>
+
+      {/* <ComputersCanvas /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
