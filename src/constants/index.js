@@ -85,58 +85,7 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "C/C++",
-    icon: cpp,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "Solidity",
-    icon: solidity,
-  },
-  {
-    name: "Rust",
-    icon: rust,
-  },
-  {
-    name: "React",
-    icon: reactjs,
-  },
-  {
-    name: "Next.js",
-    icon: nextjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node.js",
-    icon: nodejs,
-  },
-  {
-    name: "Express.js",
-    icon: express,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "MySQL",
-    icon: mysql,
-  },
-  {
-    name: "Solana",
-    icon: solana,
-  },
+  
   {
     name: "Ethereum",
     icon: ethereum,
@@ -221,12 +170,17 @@ const competitiveProfiles = [
 const achievements = [
   "Hacktoberfest 2025 — Super Contributor (6+ accepted PRs).",
   "Qualified for Summer of Bitcoin (SoB) — assignments + proposal round.",
-  "GenAI Hackathon 2025 — Finalist (Nyay-Saarthi).",
-  "Codeforces: Specialist, max rating 1414.",
+  "GenAI Hackathon 2025 — Finalist (Project : Nyay-Saarthi).",
+  "Codeforces: Specialist, max rating 1557.",
   "CodeChef: 4-star, max rating 1753.",
   "LeetCode: Knight, max rating 1874.",
-  "Contest ranks: CC Starters 179 (GR 37/21.3K), Starters 172 (GR 52/19.7K), Starters 217 (GR 192/26.6K), LC Biweekly 164 (GR 399/21.8K), Edu CF Round 174 Div2 (GR 1473/17.3K).",
-  "100+ contests, 1500+ problems solved overall.",
+  "Global Rank 396 in Codeforces Round 1034 (Div. 3)",
+  "Global Rank 981 in Codeforces Round 1037 (Div. 3)",
+  "Global Rank 1509 in Educational Codeforces Round 173 (Div. 2)",
+  "Global Rank 37 out of 21.3K participants in CodeChef Starters 179",
+  "Global Rank 52 out of 19.7K participants in CodeChef Starters 172",
+  "Global Rank 399 out of 21.8K participants in LeetCode Biweekly Contest 164", 
+  "100+ contests across platforms and 1500+ problems solved on various competitive sites."
 ];
 
 const responsibilities = [
