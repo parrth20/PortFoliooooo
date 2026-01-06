@@ -6,6 +6,10 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import linkIcon from "./link.svg";
+import codeforces from "./codeforces.svg";
+import leetcode from "./leetcode.svg";
+import codechef from "./codechef.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -21,15 +25,23 @@ import python from "./tech/python.png";
 import nextjs from "./tech/nextjs.png";
 import typescript from "./tech/typescript.png";
 import spring from "./tech/spring.png";
+import tailwind from "./tech/tailwind.png";
+import git from "./tech/git.png";
+import mongodb from "./tech/mongodb.png";
+import solidity from "./tech/solidity.svg";
+import rust from "./tech/rust.svg";
+import express from "./tech/express.svg";
+import mysql from "./tech/mysql.svg";
+import solana from "./tech/solana.svg";
+import ethereum from "./tech/ethereum.svg";
+import web3 from "./tech/web3.svg";
+import vscode from "./tech/vscode.svg";
+import terminal from "./tech/terminal.svg";
+import githubIcon from "./tech/github.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import selfdrivecar from "./selfdrivecar.jpg";
-import M25 from "./M25.jpg";
-import movierecommend from "./movierecommend.jpg";
+import qrifyme from "./qrifyme.svg";
+import solverse from "./solverse.svg";
+import nyaysaarthi from "./nyaysaarthi.svg";
 
 export {
   logo,
@@ -40,6 +52,10 @@ export {
   github,
   menu,
   close,
+  linkIcon,
+  codeforces,
+  leetcode,
+  codechef,
   css,
   docker,
   kubernetes,
@@ -53,12 +69,21 @@ export {
   nextjs,
   typescript,
   spring,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  selfdrivecar,
-  M25,
-  movierecommend,
-  clang
+  tailwind,
+  git,
+  mongodb,
+  solidity,
+  rust,
+  express,
+  mysql,
+  solana,
+  ethereum,
+  web3,
+  vscode,
+  terminal,
+  githubIcon,
+  qrifyme,
+  solverse,
+  nyaysaarthi,
+  clang,
 };
