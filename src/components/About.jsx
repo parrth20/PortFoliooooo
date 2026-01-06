@@ -19,15 +19,17 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        style={{"background": "rgba(21,16,48,0.5)",
-        "webkitBackdropFilter": "blur(10px)",
-        "backdropFilter": "blur(10px)",
-        "border": "1px solid rgba(21,16,48,0.25)"}}
+        style={{
+          background: "rgba(21,16,48,0.5)",
+          webkitBackdropFilter: "blur(10px)",
+          backdropFilter: "blur(10px)",
+          border: "1px solid rgba(21,16,48,0.25)",
+        }}
         className='rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
       >
         <img
           src={icon}
-          alt='web-development'
+          alt={title}
           className='w-16 h-16 object-contain'
         />
 
@@ -51,11 +53,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm Parth Bandwal, a B.Tech Information Technology student at IIIT Lucknow
+        (2023–2027, CGPA 7.75). I build full-stack products, Web3 dashboards, and
+        GenAI experiences, and I enjoy competitive programming. Technical skills
+        include C/C++, JavaScript, Solidity, Rust; React, Tailwind CSS, Node.js,
+        Express.js, MongoDB, Solana, Ethereum, Web3.js; tools like Git, GitHub,
+        VS Code, and the terminal; databases MySQL and MongoDB; and core subjects
+        OOP and DBMS.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
